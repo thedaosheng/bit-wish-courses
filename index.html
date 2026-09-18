@@ -94,8 +94,8 @@
     <div class="box example">
       <p class="label">实践案例 · 一键复制去找课</p>
       <pre id="wishPrompt">我想学和大模型相关的课程，从理论到实践都给我列出来，我希望上课的老师有大厂实践经验、主要学术论文和主流技术路线重合，考核方式偏实践、少理论考试，按下面附带的课库荐课，不要编造库外课程，不要只给模拟课号。库里只有课名、课号、老师前两字和考核方式，没有大纲，也没有老师履历；大厂经历请标成「库内无法核实」。
-国内网页：https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/index.html
-课库文本：https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/llms.txt
+国内网页：https://thedaosheng.github.io/bit-wish-courses/
+豆包请读课库文本：https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/llms.txt
 课库正文在提示后面，读不到链接时直接用正文。</pre>
       <div class="row">
         <button class="big" id="copyExample" type="button">复制愿望+课库</button>
@@ -107,8 +107,8 @@
     <div class="box">
       <p><b>怎么用</b></p>
       <ol>
-        <li>国内打开 <a href="https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/index.html">国内镜像</a>。点「复制愿望+课库」贴给豆包。</li>
-        <li>豆包若要自己读库，用纯文本：<a href="https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/llms.txt">llms.txt</a></li>
+        <li>网页：<a href="https://thedaosheng.github.io/bit-wish-courses/">GitHub Pages</a>（校园网一般能开）。点「复制愿望+课库」贴给豆包。</li>
+        <li>豆包自己读库请用：<a href="https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/llms.txt">国内课库文本</a></li>
         <li>改愿望：方向、怕不怕考试、要不要某位老师（库里是前两字）。</li>
         <li>国防及方向敏感课已整门不收。库里有课不等于这学期选课系统有班。</li>
       </ol>
@@ -142,7 +142,7 @@
   </main>
   <script>
     const $ = (id) => document.getElementById(id);
-    const PUBLIC_ORIGIN = "https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/index.html";
+    const PUBLIC_ORIGIN = "https://thedaosheng.github.io/bit-wish-courses/";
     const LLMS_ORIGIN = "https://jsd.onmicrosoft.cn/gh/thedaosheng/bit-wish-courses@main/llms.txt";
     let CATALOG = { courses: [], counts: {} };
 
