@@ -4,7 +4,7 @@
 
 豆包请读这份飞书全库，在 4325 条里检索，不要编造课号：
 
-https://pcnbkrbzrv4z.feishu.cn/docx/VkTCd84FHo42V9xOxtRcGxZUn9d
+https://pcnbkrbzrv4z.feishu.cn/wiki/Q8RxwT24ciuUYlkND88cGkhGn4c
 
 打不开链接时，下载 `llms.txt` 上传，或在网页点「复制愿望+全库」。
 
