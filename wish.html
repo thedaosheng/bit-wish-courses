@@ -3,181 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>许愿找课 · 北理工研究生专业选修</title>
+  <title>许愿找课 · 更贴大模型、考核偏实践</title>
   <style>
-    :root {
-      --bg: #f6f4ef;
-      --ink: #1c1915;
-      --muted: #6b6459;
-      --card: #fffdf8;
-      --line: #e4ddd0;
-      --acc: #8a3b12;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font: 16px/1.55 "Source Han Sans SC", "PingFang SC", "Noto Sans CJK SC", sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-    }
-    main { max-width: 920px; margin: 0 auto; padding: 28px 18px 80px; }
-    h1 { font-size: 28px; font-weight: 650; margin: 0 0 8px; }
-    .lead, .muted { color: var(--muted); }
-    .box {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin: 16px 0;
-    }
-    .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-    input, select, button {
-      font: inherit;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 8px 10px;
-      background: #fff;
-      color: var(--ink);
-    }
-    input[type="search"] { flex: 1; min-width: 220px; }
-    button {
-      background: var(--acc);
-      color: #fff;
-      border-color: var(--acc);
-      cursor: pointer;
-    }
-    button.ghost, a.ghost {
-      background: #fff; color: var(--ink); border: 1px solid var(--line);
-      border-radius: 8px; padding: 8px 10px; text-decoration: none;
-    }
-    button.big { padding: 10px 16px; font-weight: 600; }
-    table.wish {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 15px;
-    }
-    table.wish th, table.wish td {
-      text-align: left;
-      padding: 8px 8px;
-      border-bottom: 1px solid var(--line);
-      vertical-align: top;
-    }
-    table.wish th { color: var(--muted); font-weight: 600; }
-    table.wish code { font: 14px/1.4 ui-monospace, monospace; }
-    .example { border-color: #e6c4b0; }
-    .example .label { margin: 0 0 8px; font-weight: 650; }
-    .example pre {
-      margin: 0 0 12px;
-      font-family: inherit;
-      font-size: 15px;
-      line-height: 1.65;
-      white-space: pre-wrap;
-      background: #f3efe6;
-      padding: 10px;
-      border-radius: 8px;
-    }
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-    .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
-    .stat b { display: block; font-size: 22px; }
-    .stat span { color: var(--muted); font-size: 13px; }
-    article {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px 16px;
-      margin: 10px 0;
-    }
-    article h2 { font-size: 18px; margin: 0 0 6px; }
-    .tag {
-      display: inline-block;
-      font-size: 12px;
-      padding: 1px 7px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--muted);
-      margin-right: 6px;
-    }
-    .tag.exam { color: var(--acc); border-color: #e6c4b0; }
-    a { color: var(--acc); }
-    @media (max-width: 700px) { .stats { grid-template-columns: 1fr 1fr; } }
+    body { margin:0; font:16px/1.55 "PingFang SC","Noto Sans CJK SC",sans-serif; background:#111; color:#f4f1ea; }
+    main { max-width:980px; margin:0 auto; padding:28px 16px 80px; }
+    h1 { font-size:26px; margin:0 0 8px; }
+    .muted { color:#b7b0a4; }
+    table { width:100%; border-collapse:collapse; margin:18px 0; background:#1a1a1a; }
+    th, td { text-align:left; padding:10px 12px; border-bottom:1px solid #2c2c2c; vertical-align:top; }
+    th { color:#c9c2b6; font-weight:600; }
+    code { font:15px/1.4 ui-monospace,monospace; }
+    a { color:#e6c4b0; }
+    pre { white-space:pre-wrap; background:#161616; padding:12px; border-radius:8px; }
   </style>
 </head>
 <body>
-  <main>
-    <h1>许愿找课</h1>
-    <p class="lead">打开就能看到推荐表。公开层只有课名、课号、老师前两字和考核。没有大纲。豆包请读飞书页。</p>
-
-    <div class="box">
-      <p class="label" style="font-weight:650;margin:0 0 8px">更贴大模型、考核偏实践</p>
-      <table class="wish">
-        <thead><tr><th>顺序</th><th>课号</th><th>课名</th><th>老师</th><th>考核</th></tr></thead>
-        <tbody>
-          <tr><td>1 理论+应用</td><td><code>1700185</code></td><td>大模型理论与应用</td><td>金海</td><td>项目60% + 课堂考试40%，有考试</td></tr>
-          <tr><td>2 前沿实践</td><td><code>0700098</code></td><td>垂类大模型及 AI 前沿技术</td><td>李冬</td><td>作业20% + 研究报告30% + 实验20% + 综合应用30%，考查</td></tr>
-          <tr><td>3 基础</td><td><code>0700001</code></td><td>机器学习</td><td>李侃</td><td>MOOC25% + 讨论作业15% + 课程实践30% + 测验30%，考查</td></tr>
-          <tr><td>4 同师英文</td><td><code>0701004</code></td><td>（英）机器学习与知识发现</td><td>李侃</td><td>考查，日常30% + MOOC30% + 问答40%，实践向</td></tr>
-          <tr><td>5 进阶</td><td><code>0500094</code></td><td>高级机器学习</td><td>邓宸</td><td>考勤30% + 大作业20% + 结课汇报50%，考查</td></tr>
-          <tr><td>6 深度</td><td><code>1700174</code></td><td>深度学习理论与实践</td><td>范一</td><td>平时 + 期末考查</td></tr>
-          <tr><td>7 图网络</td><td><code>0700103</code></td><td>图神经网络技术与实践</td><td>方兰</td><td>考查，作业/课堂实验报告</td></tr>
-          <tr><td>8 管理向</td><td><code>2100256</code></td><td>机器学习理论和实践</td><td>王博</td><td>考查，课堂60% + 课程报告40%</td></tr>
-        </tbody>
-      </table>
-      <p class="muted">老师履历库内无法核实。有课不等于这学期有班。<a href="./wish.html">无脚本推荐页</a></p>
-    </div>
-
-    <div class="box example">
-      <p class="label">给豆包 · 先发飞书，打不开再粘贴</p>
-      <pre id="wishPrompt">打开这个飞书页，把「更贴大模型、考核偏实践」那张表原样输出，不要编造课号：https://pcnbkrbzrv4z.feishu.cn/wiki/RujowJAUciKcyTkOJhpcdGnSnU9
-老师大厂经历标「库内无法核实」。库内有课不等于这学期有班。</pre>
-      <div class="row">
-        <button class="big" id="copyExample" type="button">复制愿望+相关课</button>
-        <button class="ghost" id="copyFiltered" type="button">复制当前筛选</button>
-        <button class="ghost" id="copyCatalog" type="button">复制全库</button>
-        <a class="ghost" href="./llms-focus.txt" download="llms-focus.txt">下载相关课.txt</a>
-        <a class="ghost" href="./llms.txt" download="llms.txt">下载全库.txt</a>
-      </div>
-      <p class="muted" id="copyHint">课库载入后即可复制。豆包请粘贴，或把 txt 上传到对话里。</p>
-    </div>
-
-    <div class="box">
-      <p><b>怎么用</b></p>
-      <ol>
-        <li>豆包/文心/Kimi：<b>不要发链接</b>。点「复制愿望+相关课」粘贴；或下载 txt，在豆包里点 + 上传文件。</li>
-        <li>手机流量看网页：<a href="https://pcnbkrbzrv4z.feishu.cn/wiki/RujowJAUciKcyTkOJhpcdGnSnU9">飞书公开页</a>（不用登录）。飞书里也能复制全文。</li>
-        <li>校园网看网页：<a href="https://thedaosheng.github.io/bit-wish-courses/">GitHub Pages</a>。</li>
-        <li>改愿望：先在本页搜方向，再点「复制当前筛选」贴给豆包。</li>
-        <li>国防及方向敏感课已整门不收。库里有课不等于这学期选课系统有班。</li>
-      </ol>
-      <div class="row">
-        <button class="ghost" id="copyFeishu" type="button">复制飞书地址</button>
-        <button class="ghost" id="copyUrl" type="button">复制校园网地址</button>
-      </div>
-    </div>
-
-    <div class="stats" id="stats"></div>
-
-    <div class="box">
-      <div class="row">
-        <input id="q" type="search" placeholder="搜课名、老师前两字、考核…" />
-        <select id="year">
-          <option value="2026">2026 目录</option>
-          <option value="2025">2025 目录</option>
-          <option value="all">两年都看</option>
-        </select>
-        <select id="exam">
-          <option value="">考核不限</option>
-          <option value="考查">考查</option>
-          <option value="考试">考试</option>
-        </select>
-        <label><input type="checkbox" id="noZhuhai" checked /> 不要珠海</label>
-      </div>
-    </div>
-
-    <p class="muted" id="hit"></p>
-    <div id="list"></div>
-    <details class="box" id="staticFocusBox">
-      <summary>页面里已带相关课切片（给读网页的模型用，不是上面预览的前 80 门空天课）</summary>
-      <pre id="staticFocus"># 许愿找课·大模型/智能相关切片（非全库）
+<main>
+<h1>更贴大模型、考核偏实践</h1>
+<p class="muted">2026 目录原文。老师只留前两字；大厂经历库内无法核实。库内有课不等于这学期有班。无大纲。</p>
+<table>
+<thead><tr><th>顺序</th><th>课号</th><th>课名</th><th>老师</th><th>考核</th></tr></thead>
+<tbody>
+<tr><td>1 理论+应用</td><td><code>1700185</code></td><td>大模型理论与应用</td><td>金海</td><td>项目60% + 课堂考试40%，有考试</td></tr><tr><td>2 前沿实践</td><td><code>0700098</code></td><td>垂类大模型及 AI 前沿技术</td><td>李冬</td><td>作业20% + 研究报告30% + 实验20% + 综合应用30%，考查</td></tr><tr><td>3 基础</td><td><code>0700001</code></td><td>机器学习</td><td>李侃</td><td>MOOC25% + 讨论作业15% + 课程实践30% + 测验30%，考查</td></tr><tr><td>4 同师英文</td><td><code>0701004</code></td><td>（英）机器学习与知识发现</td><td>李侃</td><td>考查，日常30% + MOOC30% + 问答40%，实践向</td></tr><tr><td>5 进阶</td><td><code>0500094</code></td><td>高级机器学习</td><td>邓宸</td><td>考勤30% + 大作业20% + 结课汇报50%，考查</td></tr><tr><td>6 深度</td><td><code>1700174</code></td><td>深度学习理论与实践</td><td>范一</td><td>平时 + 期末考查</td></tr><tr><td>7 图网络</td><td><code>0700103</code></td><td>图神经网络技术与实践</td><td>方兰</td><td>考查，作业/课堂实验报告</td></tr><tr><td>8 管理向</td><td><code>2100256</code></td><td>机器学习理论和实践</td><td>王博</td><td>考查，课堂60% + 课程报告40%</td></tr>
+</tbody>
+</table>
+<p class="muted">飞书（豆包请读这个）：<a href="https://pcnbkrbzrv4z.feishu.cn/wiki/RujowJAUciKcyTkOJhpcdGnSnU9">https://pcnbkrbzrv4z.feishu.cn/wiki/RujowJAUciKcyTkOJhpcdGnSnU9</a></p>
+<p class="muted">完整相关切片见同页下方，或 <a href="./llms-focus.txt">llms-focus.txt</a>。</p>
+<h2>相关课切片</h2>
+<pre># 许愿找课·大模型/智能相关切片（非全库）
 豆包请直接读下面表格，不要自己编课号。完整库太大，请让用户点网页「复制全库」或上传 llms.txt。
 共 198 条。字段：年|课号|课名|老师前两字|考查或考试|考核说明
 
@@ -381,146 +234,6 @@
 2025|9125016|凸优化在机器学习中的理论基础和应用|XU|考查|Homework: 30% Group Presentation: 40% Test: 30%
 2025|9125021|从信号到洞察：生理分析的机器学习技术|Chandan|考查|Homework: 20% Presentation: 80%
 </pre>
-    </details>
-  </main>
-  <script>
-    const $ = (id) => document.getElementById(id);
-    const PUBLIC_ORIGIN = "https://thedaosheng.github.io/bit-wish-courses/";
-    const FEISHU_ORIGIN = "https://pcnbkrbzrv4z.feishu.cn/wiki/RujowJAUciKcyTkOJhpcdGnSnU9";
-    const FOCUS_RE = /大模型|语言模型|机器学习|深度学习|神经网络|人工智能|生成式|垂类|自然语言|预训练|知识图谱|模式识别|计算机视觉|人机交互|具身|机器人|智能计算|推荐系统|强化学习|语音识别|多模态|智能系统|数据挖掘/;
-    let CATALOG = { courses: [], counts: {} };
-
-    function renderStats() {
-      const c = CATALOG.counts || {};
-      $("stats").innerHTML = [
-        ["课程条数", c.n || 0],
-        ["2026 / 2025", (c.y2026 || 0) + " / " + (c.y2025 || 0)],
-        ["考查 / 考试", (c.check || 0) + " / " + (c.exam || 0)],
-        ["写了老师", c.withTeachers || 0],
-      ].map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("");
-    }
-
-    function filtered() {
-      const q = $("q").value.trim().toLowerCase();
-      const year = $("year").value;
-      const exam = $("exam").value;
-      const noZhuhai = $("noZhuhai").checked;
-      return CATALOG.courses.filter((c) => {
-        if (year !== "all" && c.year !== year) return false;
-        if (exam && c.exam !== exam) return false;
-        if (noZhuhai && c.zhuhai) return false;
-        if (!q) return true;
-        return [c.code, c.name, c.college, c.teachers, c.exam, c.how].join(" ").toLowerCase().includes(q);
-      });
-    }
-
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, (ch) => ({
-        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-      }[ch]));
-    }
-
-    function card(c) {
-      const tags = [
-        `<span class="tag">${c.year}</span>`,
-        `<span class="tag exam">${c.exam || "考核空"}</span>`,
-        c.zhuhai ? `<span class="tag">珠海</span>` : "",
-      ].join("");
-      return `<article>
-        <h2>${escapeHtml(c.name)} <span class="muted">${c.code}</span></h2>
-        <div>${tags}</div>
-        <p class="muted">${escapeHtml(c.college || "")} · ${escapeHtml(c.teachers || "老师未写")}</p>
-        <p>${escapeHtml(c.how || c.exam || "考核说明空")}</p>
-      </article>`;
-    }
-
-    function draw() {
-      const q = $("q").value.trim();
-      const rows = q ? filtered() : focusRows().concat(filtered().filter((c) => !FOCUS_RE.test((c.name || "") + " " + (c.how || ""))));
-      $("hit").textContent = "显示 " + rows.length + " / " + CATALOG.courses.length + (q ? "" : "（相关课在前，避免只抓到空天预览）");
-      $("list").innerHTML = rows.slice(0, 80).map(card).join("") +
-        (rows.length > 80 ? `<p class="muted">只预览前 80 门；相关课已排在最前。全库用按钮复制或看页面底部切片。</p>` : "");
-    }
-
-    async function copyText(text) {
-      try {
-        await navigator.clipboard.writeText(text);
-      } catch {
-        const ta = document.createElement("textarea");
-        ta.value = text;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        ta.remove();
-      }
-    }
-
-    function toTsv(rows) {
-      const head = "年|课号|课名|老师前两字|考查或考试|考核说明";
-      const body = rows.map((c) => [
-        c.year, c.code, c.name, c.teachers || "", c.exam || "",
-        String(c.how || "").replace(/\|/g, "/").replace(/\s+/g, " ").slice(0, 60)
-      ].join("|"));
-      return [head].concat(body).join("\n");
-    }
-
-    function focusRows() {
-      return (CATALOG.courses || []).filter((c) => {
-        if (c.zhuhai) return false;
-        return FOCUS_RE.test((c.name || "") + " " + (c.how || ""));
-      }).sort((a, b) => (a.year === b.year ? String(a.code).localeCompare(b.code) : (a.year === "2026" ? -1 : 1)));
-    }
-
-    function wrapForDoubao(title, rows) {
-      return $("wishPrompt").textContent.trim() +
-        "\n\n" + title + "共 " + rows.length + " 条。只根据这些行荐课：\n\n" + toTsv(rows);
-    }
-
-    $("copyExample").onclick = async () => {
-      if (!CATALOG.courses.length) return;
-      const rows = focusRows();
-      await copyText(wrapForDoubao("这是和大模型/智能相关的课库切片，不是全校全库。", rows));
-      $("copyExample").textContent = "已复制愿望+相关课";
-      setTimeout(() => $("copyExample").textContent = "复制愿望+相关课", 1600);
-    };
-    $("copyFiltered").onclick = async () => {
-      if (!CATALOG.courses.length) return;
-      const rows = filtered();
-      await copyText(wrapForDoubao("这是用户当前筛选的课，不是全校全库。", rows));
-      $("copyFiltered").textContent = "已复制当前筛选";
-      setTimeout(() => $("copyFiltered").textContent = "复制当前筛选", 1600);
-    };
-    $("copyCatalog").onclick = async () => {
-      if (!CATALOG.courses.length) return;
-      await copyText(toTsv(CATALOG.courses || []));
-      $("copyCatalog").textContent = "已复制全库";
-      setTimeout(() => $("copyCatalog").textContent = "复制全库", 1600);
-    };
-    $("copyFeishu").onclick = async () => {
-      await copyText(FEISHU_ORIGIN);
-      $("copyFeishu").textContent = "已复制飞书";
-      setTimeout(() => $("copyFeishu").textContent = "复制飞书地址", 1200);
-    };
-    $("copyUrl").onclick = async () => {
-      await copyText(PUBLIC_ORIGIN);
-      $("copyUrl").textContent = "已复制";
-      setTimeout(() => $("copyUrl").textContent = "复制校园网地址", 1200);
-    };
-    ["q", "year", "exam", "noZhuhai"].forEach((id) => {
-      $(id).addEventListener("input", draw);
-      $(id).addEventListener("change", draw);
-    });
-
-    fetch("./catalog.json")
-      .then((r) => r.json())
-      .then((data) => {
-        CATALOG = data;
-        renderStats();
-        draw();
-        $("copyHint").textContent = "已载入 " + data.courses.length + " 门。相关切片 " + focusRows().length + " 门，复制后直接贴给豆包，不要只发链接。";
-        $("staticFocus").textContent = toTsv(focusRows());
-      })
-      .catch((err) => { $("hit").textContent = "catalog.json 没读到：" + err; });
-  </script>
+</main>
 </body>
 </html>
